@@ -110,12 +110,3 @@ This project is open-source and available under the **MIT License**.
 📩 **For questions or support:** [Mockiko](https://mockiko.com)
 
 ```
-
-This version will:
-- Render perfectly on GitHub with proper headings, spacing, and code blocks.
-- Use emoji icons to make sections visually clear.
-- Keep links clickable and formatting clean.
-- Maintain GitHub-friendly text wrapping.
-
-If you want, I can also make a **badges section** at the top to make it look more like a trending GitHub project. That could make it stand out more.
-```
