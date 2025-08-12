@@ -1,0 +1,258 @@
+/* Teachers Hero */
+.teachers-hero {
+    height: 50vh;
+    background: linear-gradient(rgba(43, 58, 74, 0.8), rgba(43, 58, 74, 0.8)), 
+                url('https://images.unsplash.com/photo-1571260898933-d1a1f6755dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.teachers-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.teachers-hero p {
+    font-size: 1.5rem;
+    opacity: 0.9;
+}
+
+/* Faculty Intro */
+.faculty-intro {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro-content h2 {
+    font-size: 2.5rem;
+    color: var(--dark);
+    margin-bottom: 20px;
+}
+
+.intro-content p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+}
+
+/* Teacher Directory */
+.teacher-directory {
+    padding: 80px 0;
+    background-color: var(--light);
+}
+
+.filter-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.filter-options select {
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    background-color: white;
+    font-size: 1rem;
+    min-width: 200px;
+    cursor: pointer;
+}
+
+.teachers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.teacher-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    transition: all 0.3s ease;
+}
+
+.teacher-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.teacher-photo {
+    flex: 1;
+    min-width: 150px;
+    max-width: 150px;
+}
+
+.teacher-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.teacher-info {
+    flex: 2;
+    padding: 30px;
+}
+
+.teacher-info h3 {
+    font-size: 1.5rem;
+    color: var(--dark);
+    margin-bottom: 5px;
+}
+
+.teacher-info .department {
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.teacher-info .grade {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.teacher-info .bio {
+    color: var(--text-light);
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+/* Teaching Philosophy */
+.teaching-philosophy {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.philosophy-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.philosophy-content h2 {
+    font-size: 2.5rem;
+    color: var(--dark);
+    margin-bottom: 20px;
+}
+
+.philosophy-content p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.philosophy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.philosophy-item {
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+.philosophy-item:hover {
+    transform: translateY(-10px);
+}
+
+.philosophy-item i {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.philosophy-item h3 {
+    font-size: 1.3rem;
+    color: var(--dark);
+    margin-bottom: 15px;
+}
+
+.philosophy-item p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+/* Join Team */
+.join-team {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: white;
+    text-align: center;
+}
+
+.join-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.join-content p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .teacher-card {
+        flex-direction: column;
+    }
+    
+    .teacher-photo {
+        min-width: 100%;
+        max-width: 100%;
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .teachers-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .teachers-hero p {
+        font-size: 1.2rem;
+    }
+    
+    .intro-content h2 {
+        font-size: 2rem;
+    }
+    
+    .philosophy-content h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .teachers-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .filter-options {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter-options select {
+        width: 100%;
+    }
+}

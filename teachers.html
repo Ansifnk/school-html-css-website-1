@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduVista Academy | Our Teachers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/teachers.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://via.placeholder.com/50x50?text=EV" alt="EduVista Logo">
+                <h1>Edu<span>Vista</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="teachers.html" class="active">Teachers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <section class="teachers-hero">
+        <div class="container">
+            <h1>Meet Our Teachers</h1>
+            <p>Dedicated educators inspiring the next generation</p>
+        </div>
+    </section>
+
+    <section class="faculty-intro">
+        <div class="container">
+            <div class="intro-content">
+                <h2>Our Exceptional Faculty</h2>
+                <p>At EduVista Academy, our teachers are more than educators—they're mentors, role models, and passionate advocates for student success. With an average of 12 years teaching experience and 85% holding advanced degrees, our faculty brings expertise, enthusiasm, and care to every classroom.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="teacher-directory">
+        <div class="container">
+            <div class="section-header">
+                <h2>Teacher Directory</h2>
+                <p>Get to know our outstanding educators</p>
+            </div>
+            <div class="filter-options">
+                <select id="department-filter">
+                    <option value="all">All Departments</option>
+                    <option value="math">Mathematics</option>
+                    <option value="science">Science</option>
+                    <option value="english">English</option>
+                    <option value="history">History</option>
+                    <option value="arts">Arts</option>
+                    <option value="language">World Languages</option>
+                </select>
+                <select id="grade-filter">
+                    <option value="all">All Grade Levels</option>
+                    <option value="preschool">Preschool</option>
+                    <option value="elementary">Elementary</option>
+                    <option value="middle">Middle School</option>
+                    <option value="high">High School</option>
+                </select>
+            </div>
+            <div class="teachers-grid">
+                <div class="teacher-card" data-department="math" data-grade="high">
+                    <div class="teacher-photo">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah Johnson">
+                    </div>
+                    <div class="teacher-info">
+                        <h3>Sarah Johnson</h3>
+                        <p class="department">Mathematics</p>
+                        <p class="grade">High School</p>
+                        <p class="bio">With 15 years of experience, Ms. Johnson makes advanced mathematics accessible and engaging for all students.</p>
+                        <a href="#" class="btn btn-primary">View Profile</a>
+                    </div>
+                </div>
+                <div class="teacher-card" data-department="science" data-grade="middle">
+                    <div class="teacher-photo">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+                    </div>
+                    <div class="teacher-info">
+                        <h3>Michael Chen</h3>
+                        <p class="department">Science</p>
+                        <p class="grade">Middle School</p>
+                        <p class="bio">Mr. Chen's hands-on approach to science sparks curiosity and critical thinking in young minds.</p>
+                        <a href="#" class="btn btn-primary">View Profile</a>
+                    </div>
+                </div>
+                <div class="teacher-card" data-department="english" data-grade="elementary">
+                    <div class="teacher-photo">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emily Rodriguez">
+                    </div>
+                    <div class="teacher-info">
+                        <h3>Emily Rodriguez</h3>
+                        <p class="department">English</p>
+                        <p class="grade">Elementary</p>
+                        <p class="bio">Ms. Rodriguez fosters a love of reading and writing through creative, student-centered lessons.</p>
+                        <a href="#" class="btn btn-primary">View Profile</a>
+                    </div>
+                </div>
+                <div class="teacher-card" data-department="history" data-grade="high">
+                    <div class="teacher-photo">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="David Wilson">
+                    </div>
+                    <div class="teacher-info">
+                        <h3>David Wilson</h3>
+                        <p class="department">History</p>
+                        <p class="grade">High School</p>
+                        <p class="bio">Mr. Wilson brings history to life with primary sources and dynamic classroom discussions.</p>
+                        <a href="#" class="btn btn-primary">View Profile</a>
+                    </div>
+                </div>
+                <div class="teacher-card" data-department="arts" data-grade="all">
+                    <div class="teacher-photo">
+                        <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Jessica Lee">
+                    </div>
+                    <div class="teacher-info">
+                        <h3>Jessica Lee</h3>
+                        <p class="department">Visual Arts</p>
+                        <p class="grade">All Grades</p>
+                        <p class="bio">Ms. Lee encourages creative expression across all media and skill levels.</p>
+                        <a href="#" class="btn btn-primary">View Profile</a>
+                    </div>
+                </div>
+                <div class="teacher-card" data-department="language" data-grade="middle">
+                    <div class="teacher-photo">
+                        <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="Maria Gonzalez">
+                    </div>
+                    <div class="teacher-info">
+                        <h3>Maria Gonzalez</h3>
+                        <p class="department">Spanish</p>
+                        <p class="grade">Middle School</p>
+                        <p class="bio">A native speaker, Ms. Gonzalez makes language learning fun and culturally rich.</p>
+                        <a href="#" class="btn btn-primary">View Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="teaching-philosophy">
+        <div class="container">
+            <div class="philosophy-content">
+                <h2>Our Teaching Philosophy</h2>
+                <p>At EduVista Academy, we believe that great teaching is about more than delivering content—it's about inspiring a lifelong love of learning. Our educators are committed to:</p>
+                <div class="philosophy-grid">
+                    <div class="philosophy-item">
+                        <i class="fas fa-child"></i>
+                        <h3>Student-Centered Learning</h3>
+                        <p>Tailoring instruction to meet individual needs and learning styles</p>
+                    </div>
+                    <div class="philosophy-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Critical Thinking</h3>
+                        <p>Challenging students to analyze, evaluate, and create</p>
+                    </div>
+                    <div class="philosophy-item">
+                        <i class="fas fa-heart"></i>
+                        <h3>Social-Emotional Growth</h3>
+                        <p>Supporting the development of the whole child</p>
+                    </div>
+                    <div class="philosophy-item">
+                        <i class="fas fa-globe"></i>
+                        <h3>Global Perspective</h3>
+                        <p>Preparing students to be engaged citizens of the world</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="join-team">
+        <div class="container">
+            <div class="join-content">
+                <h2>Join Our Teaching Team</h2>
+                <p>Passionate about education? We're always looking for exceptional teachers to join our community.</p>
+                <a href="contact.html" class="btn btn-secondary">View Open Positions</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Teacher filter functionality
+        const departmentFilter = document.getElementById('department-filter');
+        const gradeFilter = document.getElementById('grade-filter');
+        const teacherCards = document.querySelectorAll('.teacher-card');
+        
+        function filterTeachers() {
+            const departmentValue = departmentFilter.value;
+            const gradeValue = gradeFilter.value;
+            
+            teacherCards.forEach(card => {
+                const cardDept = card.getAttribute('data-department');
+                const cardGrade = card.getAttribute('data-grade');
+                
+                const deptMatch = departmentValue === 'all' || cardDept === departmentValue;
+                const gradeMatch = gradeValue === 'all' || cardGrade === gradeValue || cardGrade === 'all';
+                
+                if (deptMatch && gradeMatch) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+        
+        departmentFilter.addEventListener('change', filterTeachers);
+        gradeFilter.addEventListener('change', filterTeachers);
+    </script>
+</body>
+</html>

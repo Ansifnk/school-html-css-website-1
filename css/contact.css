@@ -1,0 +1,225 @@
+/* Contact Hero */
+.contact-hero {
+    height: 50vh;
+    background: linear-gradient(rgba(43, 58, 74, 0.8), rgba(43, 58, 74, 0.8)), 
+                url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.contact-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.contact-hero p {
+    font-size: 1.5rem;
+    opacity: 0.9;
+}
+
+/* Contact Info */
+.contact-info {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.info-card {
+    text-align: center;
+    padding: 40px 30px;
+    background-color: var(--light);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.info-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.info-card h3 {
+    font-size: 1.5rem;
+    color: var(--dark);
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    color: var(--text-light);
+}
+
+/* Contact Form */
+.contact-form-section {
+    padding: 80px 0;
+    background-color: var(--light);
+}
+
+.form-container {
+    display: flex;
+    gap: 50px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-intro {
+    flex: 1;
+    padding: 50px;
+    background-color: var(--primary);
+    color: white;
+}
+
+.form-intro h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.form-intro p {
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.form-image {
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.form-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.form-image:hover img {
+    transform: scale(1.05);
+}
+
+.contact-form {
+    flex: 1;
+    padding: 50px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(74, 111, 165, 0.2);
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Visit Us */
+.visit-us {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: white;
+    text-align: center;
+}
+
+.visit-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.visit-content p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Map */
+.map {
+    height: 450px;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .form-container {
+        flex-direction: column;
+    }
+    
+    .form-intro, .contact-form {
+        padding: 40px;
+    }
+    
+    .form-image {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .contact-hero p {
+        font-size: 1.2rem;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-intro, .contact-form {
+        padding: 30px;
+    }
+}
